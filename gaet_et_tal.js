@@ -12,9 +12,9 @@ document.getElementById("knap").addEventListener("click", run);
 
 function run() {
   const userInput = document.getElementById("userinput").value;
-  if (userInput === tal) {
+  if (userInput == tal) {
     document.getElementById("resultat").textContent = "duuuuuu vandt";
-  } else if (userInput !== tal) {
+  } else if (userInput != tal) {
     document.getElementById("resultat").textContent = "nooooooo";
   }
 }
