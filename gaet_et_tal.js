@@ -1,7 +1,7 @@
 // Random-funktionsgenerere
 
-const rand = Math.random() * 100;
-const tal = Math.round(rand);
+const rand = Math.random() * 101;
+const tal = Math.floor(rand);
 
 console.log(tal);
 
@@ -15,6 +15,7 @@ function run() {
   if (userInput == tal) {
     document.getElementById("resultat").textContent =
       "Waaauw, du gættede rigtigt. Tillykke!";
+    document.getElementById("bear").classList.remove("hide");
   } else if (userInput > tal) {
     document.getElementById("resultat").textContent =
       "Forkert! Du gættede desværre et for højt tal";

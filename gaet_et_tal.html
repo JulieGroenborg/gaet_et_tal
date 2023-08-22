@@ -3,7 +3,7 @@
     Brugeren skal herefter gætte tallet ved at taste det ind i et inputfelt og trykke på en knap.
     
     Programmet skal herefter give feedback om tallet er for højt, for lavt eller om
-tallet er gættet.
+    tallet er gættet.
 
 Når tallet bliver gættet skal der være en fejringsgrafik/animation -->
 <!DOCTYPE html>
@@ -15,12 +15,26 @@ Når tallet bliver gættet skal der være en fejringsgrafik/animation -->
     <title>Document</title>
   </head>
   <body>
+    <div>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+      <lottie-player
+        id="bear"
+        class="hide"
+        src="animation.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
     <label for="gæt"
       >Gæt et tal mellem 0 og 100! <input type="number" id="userinput" />
       <button id="knap">Tjek</button></label
     >
-
     <p id="resultat"></p>
+
     <script src="gaet_et_tal.js"></script>
   </body>
 </html>
